@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    background-color: #f4f4f4;
+    background-color: #d3d3d3;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -19,7 +19,7 @@ body {
 
 h1 {
     text-align: center;
-    margin-bottom: 20pcx;
+    margin-bottom: 20px;
 }
 
 #todo-form {
@@ -32,7 +32,7 @@ h1 {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    margin-right: 10 px;
+    margin-right: 10px;
 }
 
 button {
@@ -53,7 +53,7 @@ button:hover {
     padding: 0;
 }
 
-.todo-item{
+.todo-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,24 +61,25 @@ button:hover {
     border-bottom: 1px solid #ccc;
 }
 
-.todo-itemlast-child{
+.todo-item:last-child {
     border-bottom: none;
 }
 
-.todo-item span{
+.todo-item span {
     flex: 1;
     margin-right: 10px;
 }
 
-.todo-item button{
-    background-color: #dc3545;
+.todo-item button {
+    background-color: #d1c843;
     border: none;
     color: #fff;
     padding: 5px 10px;
     border-radius: 4px;
     cursor: pointer;
+    margin-left: 5px;
 }
 
-.todo-item button:hover{
+.todo-item button:hover {
     background-color: #c82333;
 }

@@ -1,4 +1,4 @@
-// ==== Todo CRUD Management ====
+// ==== Todo CRUD MANAGEMENT ==== 
 
 // Array to store todos
 let todos = [];
@@ -23,13 +23,14 @@ function renderTodos() {
     });
 }
 
+
 // Function to add a new todo
 function addTodo(event) {
     event.preventDefault(); // Prevent form submission
     const newTodo = todoInput.value.trim();
     if (newTodo) {
         todos.push(newTodo);
-        todoInput.value = ''; // Clear the input
+        todoInput.value = ''; // Clear the Input
         renderTodos();
     }
 }
@@ -37,7 +38,7 @@ function addTodo(event) {
 // Function to edit a todo
 function editTodo(index) {
     const updatedTodo = prompt('Edit your todo:', todos[index]);
-    if (updatedTodo !== null) {
+    if (updatedTodo != null) {
         todos[index] = updatedTodo.trim();
         renderTodos();
     }
@@ -51,8 +52,8 @@ function deleteTodo(index) {
     }
 }
 
-//Event Listeners
-    todoForm.addEventListener('submit'), addTotal
+// Event Listeners
+todoForm.addEventListener('submit', addTodo);
 
-//Initial render
+// Initial render
 renderTodos();
